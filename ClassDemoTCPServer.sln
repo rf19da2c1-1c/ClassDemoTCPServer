@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassDemoTCPServer", "ClassDemoTCPServer\ClassDemoTCPServer.csproj", "{560E5FF8-2DF6-404D-96C0-DFAB6DCB5932}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassDemoTCPClient", "ClassDemoTCPClient\ClassDemoTCPClient.csproj", "{E1C022F6-86E6-4243-9F2E-31D74CA12FC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{560E5FF8-2DF6-404D-96C0-DFAB6DCB5932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{560E5FF8-2DF6-404D-96C0-DFAB6DCB5932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{560E5FF8-2DF6-404D-96C0-DFAB6DCB5932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C022F6-86E6-4243-9F2E-31D74CA12FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C022F6-86E6-4243-9F2E-31D74CA12FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C022F6-86E6-4243-9F2E-31D74CA12FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C022F6-86E6-4243-9F2E-31D74CA12FC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
