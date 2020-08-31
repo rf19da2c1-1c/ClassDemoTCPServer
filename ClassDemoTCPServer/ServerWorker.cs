@@ -21,8 +21,19 @@ namespace ClassDemoTCPServer
             // venter på en klient skal lave et opkald
             TcpClient socket = server.AcceptTcpClient();
 
-            StreamReader sr = new StreamReader(socket.GetStream());
-            StreamWriter sw = new StreamWriter(socket.GetStream());
+            DoClient(socket);
+
+            socket.Close();
+
+
+        }
+
+        private void DoClient(TcpClient socket)
+        {
+            // net stream
+            NetworkStream ns = socket.GetStream();
+            StreamReader sr = new StreamReader(ns);
+            StreamWriter sw = new StreamWriter(ns);
 
             // læs tekst fra klient
             String str = sr.ReadLine();
@@ -32,10 +43,6 @@ namespace ClassDemoTCPServer
             String UpperStr = str.ToUpper();
             sw.WriteLine(UpperStr);
             sw.Flush(); // tømmer buffer
-
-            socket.Close();
-
-
         }
     }
 }
